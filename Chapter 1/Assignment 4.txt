@@ -1,0 +1,13 @@
+a='CTTGATCAT'
+b=''.join([line.rstrip() for line in open('C:\Coursera\Bioinformatics Algorithms\Chapter 1\Vibrio_cholerae.txt')])
+x=0
+c=[]
+
+for n in range(len(b)):
+    c.append(str(b[x:].find(a)+x))
+    x=b[x:].find(a)+x+1
+    if b[x:].find(a)==(-1):
+        break
+d=' '.join(c)
+print d
+print len(b)

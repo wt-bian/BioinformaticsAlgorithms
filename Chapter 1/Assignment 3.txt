@@ -1,0 +1,13 @@
+a='ATAT'
+b='GATATATGCATATACTT'
+x=0
+c=[]
+
+for n in range(len(b)):
+    c.append(str(b[x:].find(a)+x))
+    x=b[x:].find(a)+x+1
+    if b[x:].find(a)==(-1):
+        break
+print c
+d=' '.join(c)
+print d

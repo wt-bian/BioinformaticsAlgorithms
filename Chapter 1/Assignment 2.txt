@@ -1,0 +1,16 @@
+a=''
+b=[]
+for x in range(len(a)):
+    b.append(a[len(a)-x-1])
+c=[]
+for x in range(len(a)):
+    if b[x]=='A':
+        c.append('T')
+    elif b[x]=='C':
+        c.append('G')
+    elif b[x]=='T':
+        c.append('A')
+    elif b[x]=='G':
+        c.append('C') 
+d=''.join(c)
+print d

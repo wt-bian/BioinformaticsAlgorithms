@@ -1,0 +1,19 @@
+a=''
+b=12
+c=[]
+d=[]
+e=set()
+for x in range(len(a)-b):
+    c.append(a.count(a[x:x+b]))
+    d.append(a[x:x+b])
+f=max(c)
+x=1
+while x==1:
+    e.add(d[c.index(max(c))])
+    c.remove(max(c))
+    d.remove(d[c.index(max(c))])
+    if f>max(c):
+        break
+print e
+print f
+print max(c)
